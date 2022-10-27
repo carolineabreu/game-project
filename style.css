@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 40px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#character {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  top: 400px;
+  left: 100px;
+}
+
+#obstacle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  top: 500px;
+  animation: slide 1s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 500px;
+  }
+}
